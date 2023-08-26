@@ -213,7 +213,7 @@ ul
     width: 45px;
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     left: 300px;
     top: 20px;
     border-radius: 5px;
@@ -221,6 +221,9 @@ ul
     display: none;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    transition: .4s;
+ 
 }
 .aside .nav-toggler span
 {
@@ -754,7 +757,16 @@ h3.my-profession
     .aside
     {
         left: -270px;
+        
     }
+    .aside .nav-toggler
+    {
+        display: block;
+    }
+    .aside.active{
+        left: 0;
+    }
+
     .main-content{
         padding-left: 0;
     }

@@ -21,7 +21,7 @@
     <!--======== Main Container Start ========-->
     <div class="main-container">
         <!-- ====== Aside Start -->
-        <div class="aside">
+        <div class="aside " onclick="show()">
             <div class="logo">
                 <a href="#"><span>Divya</span> Sai</a>
             </div>
@@ -510,15 +510,24 @@
     <script src="js/style-switcher.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 
-    <script>
-       const navLinkEls = document.querySelectorAll('.nav_link');
 
+    <script>
+        
+// nav toggler
+function show(){
+    document.querySelector('.aside').classList.toggle('active');
+}
+
+    </script>
+    <script>
+// active button js
+       const navLinkEls = document.querySelectorAll('.nav_link');
        navLinkEls.forEach(navLinkEl => {
         navLinkEl.addEventListener('click', () => {
             document.querySelector('.active').classList.remove('active');
             navLinkEl.classList.add('active');
-        })
-       })
+        });
+       });
     </script>
 </body>
 </html>
