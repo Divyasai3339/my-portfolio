@@ -791,7 +791,11 @@ h3.my-profession
         max-width: 100%;
     }
     .home .home-img{
-        display: none;
+        /* display: none; */
+        margin: auto;
+    }
+    .home .home-img img{
+         height: 300px;
     }
 }
 @media (max-width:767px) 
@@ -808,4 +812,37 @@ h3.my-profession
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .home .home-img{
+        position: relative;
+        /* top: 55px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 50px;
+    }
+    .home-img::before {
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-top: 10px solid var(--skin-color);
+        border-left: 10px solid var(--skin-color);
+        left: -40px;
+        top: -20px;
+    }
+    .home-img::after {
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
+        right: -60px;
+        bottom: -40px;
+    }
+    .home .home-img img{
+        /* height: 200px; */
+        position: relative;
+   }
+
 }
