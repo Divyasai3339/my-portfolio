@@ -763,7 +763,7 @@ h3.my-profession
     {
         display: block;
     }
-    .aside.active{
+    .aside.btnactive{
         left: 0;
     }
 
