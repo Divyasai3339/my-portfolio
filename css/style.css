@@ -815,10 +815,10 @@ h3.my-profession
     .home .home-img{
         position: relative;
         /* top: 55px; */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50px;
     }
     .home-img::before {
         content: '';
@@ -841,8 +841,11 @@ h3.my-profession
         bottom: -40px;
     }
     .home .home-img img{
-        /* height: 200px; */
         position: relative;
    }
+   .about .about-content .personal-info .info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
 
 }
