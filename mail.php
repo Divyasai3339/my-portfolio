@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 //get data from form  
 $name = $_POST['name'];
 $email = $_POST['email'];
